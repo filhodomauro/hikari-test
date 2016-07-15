@@ -8,7 +8,8 @@ import grails.rest.Resource
 @Resource(uri="/items", formats=['json'])
 class Item {
     static mapping = {
-        dataSource "secondary"
+        datasource 'lookup'
     }
+
     String name
 }
